@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="icon" type="image/ico" href="canastra.ico" />
+	<title></title>
+</head>
+<body>
+    <div class="container">
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="index.html">
+	        <img alt="Brand" src="canastra.ico" height="30px" width="30px">
+	      </a>
+	    </div>
+	  </div>
+	</nav>
+
+<div class="container-fluid">
+
+<div class="form-inline" style="text-align-last: center">
+		<div class="form-group">
+			<input type="text" class="form-control" id="jogador1" placeholder="Jogador 1"></input>
+			<input type="text" class="form-control" id="jogador2" placeholder="Jogador 2"></input>
+			<input type="text" class="form-control" id="jogador3" placeholder="Jogador 3"></input>		
+			<input type="text" class="form-control" id="jogador4" placeholder="Jogador 4"></input>
+			
+			<span id="btnAdd">
+				<button onclick="novoJogo();" class="btn btn-info">Novo Jogo</button>
+			</span>			
+		</div>		
+</div>
+<br />
+<div class="form-inline" style="text-align-last: center">
+		<div class="form-group">
+			<input type="number" class="form-control" id="pts1" placeholder="Pontos Dupla 1"></input>
+			<input type="number" class="form-control" id="pts2" placeholder="Pontos Dupla 2"></input>					
+			<span id="btnUpdate" style="display: none">
+				<span id="inputIdUpdate">					
+				</span>
+				<button onclick="updateData();" class="btn btn-success">Save</button>
+				<button onclick="resetForm();" class="btn btn-warning">Cancel</button>
+			</span>
+			<span id="btnAdd">
+				<button onclick="addMao();" class="btn btn-info">Nova Mao</button>
+
+			</span>
+			
+		</div>		
+	</div>
+<br />
+<div class="table-responsive">
+	<table class="table table-striped" style="width: 500px; margin: auto; text-align-last: center">
+  		<thead id="cabecalho_duplas">
+  		</thead>
+  		<tbody id="corpo_mao" class="table-hover">  		
+  		</tbody>
+	</table>
+</div>
+
+
+
+</div>
+</div>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/config.js"></script>
+</body>
+</html>
